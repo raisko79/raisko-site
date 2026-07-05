@@ -1,0 +1,16 @@
+<h1>Employee Login</h1>
+<form onsubmit="validateLogin(event)">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username"><br><br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password"><br><br>
+  <input type="submit" value="Login">
+</form>
+<p id="message"></p>
+
+<script>
+function validateLogin(event) {
+  event.preventDefault();
+  document.getElementById("message").innerText = "Invalid credentials.";
+}
+</script>
