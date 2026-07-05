@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Employee Login - Raisko</title>
+  <title>Employees - Raisko</title>
   <style>
     body { margin:0; font-family:"Helvetica Neue",Arial,sans-serif; background:#000; color:#fff; }
-    header { padding:40px; display:flex; justify-content:space-between; align-items:center; }
-    header h1 { font-size:2.5em; margin:0; letter-spacing:2px; }
-    nav a { color:#fff; text-decoration:none; margin-left:15px; opacity:0.7; }
+    header { background:#111; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; }
+    header h1 { font-size:2em; margin:0; letter-spacing:2px; }
+    nav { display:flex; gap:20px; }
+    nav a { color:#fff; text-decoration:none; font-weight:500; opacity:0.8; transition:opacity 0.3s; }
     nav a:hover { opacity:1; }
-    section { text-align:center; padding:100px 20px; max-width:800px; margin:auto; }
+    section { text-align:center; padding:80px 20px; max-width:900px; margin:auto; }
     section h2 { font-size:1.5em; margin-bottom:20px; text-transform:uppercase; opacity:0.8; }
-    form { margin-top:20px; }
-    input { padding:10px; margin:5px; border-radius:4px; border:none; }
-    input[type="submit"] { background:#fff; color:#000; cursor:pointer; }
+    section p { font-size:1.2em; line-height:1.6; opacity:0.9; margin-bottom:20px; }
+    form { margin-top:30px; }
+    input { width:80%; max-width:400px; padding:10px; margin:10px auto; border-radius:4px; border:none; display:block; }
+    input[type="submit"] { background:#fff; color:#000; cursor:pointer; font-weight:bold; }
     input[type="submit"]:hover { background:#222; color:#fff; }
-    #message { margin-top:20px; font-size:1.2em; color:#ff4444; }
-    footer { text-align:center; padding:20px; font-size:0.9em; opacity:0.6; }
+    footer { background:#111; text-align:center; padding:20px; font-size:0.9em; opacity:0.6; }
   </style>
 </head>
 <body>
@@ -25,31 +26,29 @@
     <h1>RAISKO</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
+      <a href="about.html">About</a>
       <a href="services.html">Services</a>
+      <a href="mission.html">Mission</a>
+      <a href="careers.html">Careers</a>
       <a href="contact.html">Contact</a>
+      <a href="employees.html">Employees</a>
+      <a href="privacy.html">Privacy</a>
     </nav>
   </header>
 
   <section>
-    <h2>Employee Login</h2>
-    <form onsubmit="validateLogin(event)">
-      <input type="text" id="username" name="username" placeholder="Username"><br>
-      <input type="password" id="password" name="password" placeholder="Password"><br>
+    <h2>Employee Portal</h2>
+    <p>Access to this section is restricted. Please log in below.</p>
+    
+    <form onsubmit="alert('Invalid credentials'); return false;">
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
       <input type="submit" value="Login">
     </form>
-    <p id="message"></p>
   </section>
 
-  <script>
-    function validateLogin(event) {
-      event.preventDefault();
-      document.getElementById("message").innerText = "Invalid credentials.";
-    }
-  </script>
-
   <footer>
-    <p>&copy; 2026 Raisko. All rights reserved.</p>
+    <p>All content © 2026 Raisko Pvt. Ltd. Unauthorized use prohibited.</p>
   </footer>
 </body>
 </html>
