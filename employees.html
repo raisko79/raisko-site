@@ -36,4 +36,20 @@
     <form onsubmit="validateLogin(event)">
       <input type="text" id="username" name="username" placeholder="Username"><br>
       <input type="password" id="password" name="password" placeholder="Password"><br>
-      <input type
+      <input type="submit" value="Login">
+    </form>
+    <p id="message"></p>
+  </section>
+
+  <script>
+    function validateLogin(event) {
+      event.preventDefault();
+      document.getElementById("message").innerText = "Invalid credentials.";
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2026 Raisko. All rights reserved.</p>
+  </footer>
+</body>
+</html>
