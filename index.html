@@ -8,28 +8,31 @@
     body {
       margin: 0;
       font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: #000000;
-      color: #ffffff;
+      background-color: #000;
+      color: #fff;
     }
     header {
-      padding: 40px;
+      padding: 40px 60px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
     }
     header h1 {
-      font-size: 2.5em;
+      font-size: 2.2em;
       margin: 0;
-      letter-spacing: 2px;
+      letter-spacing: 4px;
+      font-weight: 300;
     }
     nav {
       display: flex;
-      gap: 20px;
+      gap: 40px;
     }
     nav a {
-      color: #ffffff;
+      color: #d4af37;
       text-decoration: none;
-      font-size: 1em;
+      font-size: 0.9em;
+      letter-spacing: 2px;
       opacity: 0.7;
       transition: opacity 0.3s;
     }
@@ -38,48 +41,53 @@
     }
     section {
       text-align: center;
-      padding: 100px 20px;
-      max-width: 800px;
+      padding: 140px 20px;
+      max-width: 900px;
       margin: auto;
     }
     section h2 {
-      font-size: 1.5em;
-      margin-bottom: 20px;
+      font-size: 2em;
+      margin-bottom: 40px;
       text-transform: uppercase;
-      opacity: 0.8;
+      font-weight: 400;
+      color: #d4af37;
+      letter-spacing: 3px;
     }
     section p {
-      font-size: 1.2em;
-      line-height: 1.6;
-      opacity: 0.9;
+      font-size: 1.1em;
+      line-height: 1.9;
+      opacity: 0.85;
     }
     .divider {
-      width: 60px;
+      width: 100px;
       height: 1px;
-      background-color: #ffffff;
-      margin: 40px auto;
-      opacity: 0.3;
+      background-color: #d4af37;
+      margin: 50px auto;
+      opacity: 0.6;
     }
     .button {
       display: inline-block;
-      margin-top: 30px;
-      padding: 12px 30px;
-      background-color: #ffffff;
-      color: #000000;
+      margin-top: 50px;
+      padding: 14px 40px;
+      background-color: #d4af37;
+      color: #000;
       text-decoration: none;
-      border-radius: 4px;
-      font-size: 1em;
-      transition: background 0.3s;
+      border-radius: 2px;
+      font-size: 0.95em;
+      letter-spacing: 2px;
+      transition: background 0.3s, color 0.3s;
     }
     .button:hover {
-      background-color: #222222;
-      color: #ffffff;
+      background-color: #fff;
+      color: #000;
     }
     footer {
       text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      opacity: 0.6;
+      padding: 40px;
+      font-size: 0.85em;
+      opacity: 0.5;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      letter-spacing: 1px;
     }
   </style>
 </head>
@@ -100,10 +108,14 @@
   </header>
 
   <section>
-    <p style="opacity:0.7;">EST. 2018</p>
+    <p style="color:#d4af37; letter-spacing:3px;">EST. 2018</p>
     <div class="divider"></div>
-    <p>Raisko is built on excellence, discretion, and innovation.<br>
-    We exist to create experiences that transcend expectations.</p>
+    <p style="font-size:1.3em; line-height:2;">
+      Raisko is built on excellence, discretion, and innovation.<br>
+      We exist to create experiences that transcend expectations.
+    </p>
+    <p style="margin-top:60px; font-size:0.85em; opacity:0.6; letter-spacing:2px;">SCROLL</p>
+    <div class="divider" style="width:50px;"></div>
   </section>
 
   <section>
@@ -122,7 +134,8 @@
 
   <section>
     <h2>Connect With Us</h2>
-    <p>We welcome inquiries from those who share our vision of excellence.</p>
+    <p>We welcome inquiries from those who share our vision of excellence.<br>
+    Reach out to explore possibilities with Raisko.</p>
     <a href="mailto:admin@raisko.com" class="button">Get in Touch</a>
   </section>
 
