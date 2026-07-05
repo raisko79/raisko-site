@@ -3,31 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raisko - Home</title>
+  <title>Raisko</title>
   <style>
-    body { margin:0; font-family:"Helvetica Neue",Arial,sans-serif; background:#000; color:#fff; }
-    header { background:#000; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; }
-    header h1 { font-size:2.5em; margin:0; letter-spacing:2px; color:#fff; }
-    nav { display:flex; gap:20px; }
-    nav a { color:#d4af37; text-decoration:none; font-weight:500; opacity:0.8; transition:opacity 0.3s; }
-    nav a:hover { opacity:1; }
-
-    section { text-align:center; padding:100px 20px; max-width:900px; margin:auto; }
-    section h2 { font-size:2em; margin-bottom:20px; text-transform:uppercase; color:#d4af37; }
-    section p { font-size:1.2em; line-height:1.6; margin-bottom:30px; }
-
-    .cta-button { background:#d4af37; color:#000; padding:12px 25px; border:none; border-radius:4px; font-weight:bold; cursor:pointer; text-decoration:none; }
-    .cta-button:hover { background:#fff; color:#000; }
-
-    footer { background:#000; text-align:center; padding:20px; font-size:0.9em; color:#fff; opacity:0.6; }
-
-    .gold { color:#d4af37; }
-    .pillars { display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:40px; }
-    .pillars div { border:1px solid #d4af37; padding:20px; border-radius:6px; }
-    .pillars h3 { margin:0 0 10px; color:#d4af37; }
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #000000;
+      color: #ffffff;
+    }
+    header {
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1em;
+      opacity: 0.7;
+      transition: opacity 0.3s;
+    }
+    nav a:hover {
+      opacity: 1;
+    }
+    section {
+      text-align: center;
+      padding: 100px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+    section p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+    .divider {
+      width: 60px;
+      height: 1px;
+      background-color: #ffffff;
+      margin: 40px auto;
+      opacity: 0.3;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background-color: #ffffff;
+      color: #000000;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background-color: #222222;
+      color: #ffffff;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      opacity: 0.6;
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>RAISKO</h1>
     <nav>
@@ -42,44 +99,36 @@
     </nav>
   </header>
 
-  <!-- Landing -->
   <section>
-    <span class="gold">EST. 2018</span>
-    <hr style="border:0; border-top:1px solid #d4af37; width:60%; margin:20px auto;">
+    <p style="opacity:0.7;">EST. 2018</p>
+    <div class="divider"></div>
     <p>Raisko is built on excellence, discretion, and innovation.<br>
-       We exist to create experiences that transcend expectations.</p>
-    <p style="margin-top:40px;">SCROLL</p>
-    <hr style="border:0; border-top:1px solid #d4af37; width:40%; margin:10px auto;">
+    We exist to create experiences that transcend expectations.</p>
   </section>
 
-  <!-- Philosophy -->
   <section>
     <h2>Our Philosophy</h2>
     <p>At Raisko, we believe true sophistication lies in simplicity.<br>
-       Our work reflects a commitment to quality, integrity, and a vision for the future.</p>
+    Our work reflects a commitment to quality, integrity, and a vision for the future.</p>
   </section>
 
-  <!-- Pillars -->
   <section>
     <h2>Our Pillars</h2>
-    <div class="pillars">
-      <div><h3>01 Excellence</h3><p>Uncompromising standards in every endeavor.</p></div>
-      <div><h3>02 Innovation</h3><p>Forward-thinking solutions for a changing world.</p></div>
-      <div><h3>03 Discretion</h3><p>Confidentiality and trust at the core of our work.</p></div>
-      <div><h3>04 Legacy</h3><p>Building enduring impact for generations to come.</p></div>
-    </div>
+    <p><strong>Excellence</strong> — Uncompromising standards in every endeavor.<br><br>
+       <strong>Innovation</strong> — Forward‑thinking solutions for a changing world.<br><br>
+       <strong>Discretion</strong> — Trust at the heart of all we do.<br><br>
+       <strong>Legacy</strong> — Building something timeless.</p>
   </section>
 
-  <!-- Connect -->
   <section>
     <h2>Connect With Us</h2>
-    <p>We welcome inquiries from those who share our vision of excellence.<br>
-       Reach out to explore possibilities with Raisko.</p>
-    <a href="contact.html" class="cta-button">GET IN TOUCH</a>
+    <p>We welcome inquiries from those who share our vision of excellence.</p>
+    <a href="mailto:admin@raisko.com" class="button">Get in Touch</a>
   </section>
 
   <footer>
-    <p>© 2026 Raisko Pvt. Ltd. Unauthorized use prohibited.</p>
+    <p>&copy; 2026 Raisko. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
