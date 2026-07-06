@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+}
+nav {
+  text-align: center;
+  padding: 20px;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero h1 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 64px;
+  margin: 0;
+}
+.section {
+  text-align: center;
+  padding: 60px 20px;
+}
+.section h2 {
+  font-family: "Georgia", serif;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.section p {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.pillars {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+.pillar {
+  width: 220px;
+  text-align: center;
+}
+.pillar h3 {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.pillar p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+.contact-button {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 2px solid black;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  margin-top: 20px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
