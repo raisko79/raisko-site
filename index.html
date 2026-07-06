@@ -2,145 +2,143 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raisko</title>
   <style>
     body {
       margin: 0;
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-    header {
-      padding: 80px 100px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-    header h1 {
-      font-size: 3.5em;
-      margin: 0;
-      letter-spacing: 12px;
-      font-weight: 200;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: black;
     }
     nav {
-      display: flex;
-      gap: 70px;
+      text-align: right;
+      padding: 20px;
     }
     nav a {
-      color: #d4af37;
+      margin: 0 15px;
       text-decoration: none;
-      font-size: 0.85em;
-      letter-spacing: 3px;
-      opacity: 0.7;
-      transition: opacity 0.3s;
-    }
-    nav a:hover {
-      opacity: 1;
-    }
-    section {
-      text-align: center;
-      padding: 220px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    section h2 {
-      font-size: 2.8em;
-      margin-bottom: 80px;
+      color: black;
+      font-weight: bold;
       text-transform: uppercase;
-      font-weight: 300;
-      color: #d4af37;
-      letter-spacing: 6px;
     }
-    section p {
-      font-size: 1.5em;
-      line-height: 2.4;
-      opacity: 0.85;
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 100px 20px;
     }
-    .divider {
-      width: 160px;
-      height: 1px;
-      background-color: #d4af37;
-      margin: 100px auto;
-      opacity: 0.6;
+    .hero-left {
+      color: #555; /* dark grey */
+      font-size: 32px;
+      line-height: 1.5;
+      margin-right: 40px;
     }
-    .button {
-      display: inline-block;
-      margin-top: 100px;
-      padding: 20px 80px;
-      background-color: #d4af37;
-      color: #000;
-      text-decoration: none;
-      border-radius: 2px;
-      font-size: 1em;
-      letter-spacing: 3px;
-      transition: background 0.3s, color 0.3s;
+    .hero-right {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 96px; /* large enough to match height of 3 lines */
+      color: black;
     }
-    .button:hover {
-      background-color: #fff;
-      color: #000;
-    }
-    footer {
+    .section {
       text-align: center;
-      padding: 80px;
-      font-size: 0.85em;
-      opacity: 0.5;
-      border-top: 1px solid rgba(255,255,255,0.1);
-      letter-spacing: 2px;
+      padding: 60px 20px;
+    }
+    .section h2 {
+      font-family: "Georgia", serif; /* elegant serif font */
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .section p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .pillars {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      margin-top: 40px;
+    }
+    .pillar {
+      width: 300px;
+    }
+    .pillar h3 {
+      font-weight: bold;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .pillar p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    .connect-text {
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .contact-button {
+      display: inline-block;
+      padding: 12px 30px;
+      border: 2px solid black;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: black;
     }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Mission</a>
+    <a href="#">Careers</a>
+    <a href="#">Contact</a>
+    <a href="#">Employees</a>
+    <a href="#">Privacy</a>
+  </nav>
 
-  <header>
-    <h1>RAISKO</h1>
-    <nav>
-      <a href="index.html">HOME</a>
-      <a href="about.html">ABOUT</a>
-      <a href="services.html">SERVICES</a>
-      <a href="mission.html">MISSION</a>
-      <a href="careers.html">CAREERS</a>
-      <a href="contact.html">CONTACT</a>
-      <a href="employees.html">EMPLOYEES</a>
-      <a href="privacy.html">PRIVACY</a>
-    </nav>
-  </header>
+  <div class="hero">
+    <div class="hero-left">
+      I am<br>
+      You are<br>
+      We are
+    </div>
+    <div class="hero-right">
+      RAISKO
+    </div>
+  </div>
 
-  <section>
-    <p style="color:#d4af37; letter-spacing:6px; font-size:1.3em;">EST. 2018</p>
-    <div class="divider"></div>
-    <p style="font-size:1.8em; line-height:2.6;">
-      Raisko is built on excellence, discretion, and innovation.<br>
-      We exist to create experiences that transcend expectations.
-    </p>
-    <div class="divider" style="width:100px;"></div>
-  </section>
+  <div class="section">
+    <h2>Est. 2018</h2>
+    <p><strong>Raisko is built on excellence, discretion, and innovation. True sophistication lies in simplicity. We create experiences that transcend expectations.</strong></p>
+  </div>
 
-  <section>
-    <h2>Our Philosophy</h2>
-    <p>At Raisko, we believe true sophistication lies in simplicity.<br>
-    Our work reflects a commitment to quality, integrity, and a vision for the future.</p>
-  </section>
-
-  <section>
+  <div class="section">
     <h2>Our Pillars</h2>
-    <p><strong>Excellence</strong> — Uncompromising standards in every endeavor.<br><br>
-       <strong>Innovation</strong> — Forward‑thinking solutions for a changing world.<br><br>
-       <strong>Discretion</strong> — Trust at the heart of all we do.<br><br>
-       <strong>Legacy</strong> — Building something timeless.</p>
-  </section>
+    <div class="pillars">
+      <div class="pillar">
+        <h3>Excellence</h3>
+        <p>Uncompromising standards in every endeavor.</p>
+        <h3>Innovation</h3>
+        <p>Forward-thinking solutions for a changing world.</p>
+      </div>
+      <div class="pillar">
+        <h3>Discretion</h3>
+        <p>Trust at the heart of all we do.</p>
+        <h3>Legacy</h3>
+        <p>Building something timeless.</p>
+      </div>
+    </div>
+  </div>
 
-  <section>
+  <div class="section">
     <h2>Connect With Us</h2>
-    <p>We welcome inquiries from those who share our vision of excellence.<br>
-    Reach out to explore possibilities with Raisko.</p>
-    <a href="mailto:admin@raisko.com" class="button">GET IN TOUCH</a>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Raisko. All rights reserved.</p>
-  </footer>
-
+    <p class="connect-text">We welcome inquiries by those who share our vision of excellence. Reach out to explore possibilities with Raisko.</p>
+    <a href="contact.html" class="contact-button">Contact Us</a>
+  </div>
 </body>
 </html>
